@@ -11,7 +11,6 @@ public class Main
         Scanner in = new Scanner(System.in);
 
         while(true) {
-            try {
                 System.out.print("Enter matrix lenght: ");
 
                 int size = in.nextInt();
@@ -19,10 +18,6 @@ public class Main
                 matrix.print();
                 matrix.reverse();
                 matrix.print();
-            }
-            catch (Exception e) {
-                System.err.println(e.getMessage());
-            }
         }
 
     }

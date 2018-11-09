@@ -8,11 +8,12 @@ public class SquareMatrix
     {
         this.matrix  = new int[1][1];
     }
-    public SquareMatrix(int size) throws MatrixException
+    public SquareMatrix(int size)
     {
         if(size <= 0)
         {
-            throw new MatrixException("Заданы неверные размеры матрицы");
+            System.out.println("Заданы неверные размеры матрицы. Будет создана матрица 1х1");
+            size = 1;
         }
         this.matrix  = new int[size][size];
         randomMatrix(this.matrix);
@@ -52,17 +53,5 @@ public class SquareMatrix
             System.out.println();
         }
         System.out.println();
-    }
-
-    private class MatrixException extends Exception {
-
-        private String cause;
-
-        MatrixException(String cause) {
-            this.cause = cause;
-        }
-        public String getMessage() {
-            return this.cause;
-        }
     }
 }
