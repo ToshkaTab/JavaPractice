@@ -14,7 +14,6 @@ public class Main {
         display(OptionalData.getOptionals());
         ClientCyclo();
     }
-    
     private static void ClientCyclo(){
         Scanner in = new Scanner(System.in);
         while (true) {
