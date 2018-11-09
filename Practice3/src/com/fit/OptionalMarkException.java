@@ -7,6 +7,7 @@ public class OptionalMarkException extends Exception {
         return mark;
     }
 
+
     public OptionalMarkException(String message, int mark){
         super(message);
         this.mark = mark;

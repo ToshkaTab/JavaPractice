@@ -109,7 +109,6 @@ public class Optional  {
         OptionalData.addOptional(this);
     }
 
-
     private int getStudentIndex(Student student){
         int index = -1;
         for(Student s : students){
