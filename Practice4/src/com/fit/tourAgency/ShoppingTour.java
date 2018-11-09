@@ -17,6 +17,7 @@ final class ShoppingTour extends Tour {
             this.shopPoints[i++] = shopPoint;
         }
     }
+
     @Override
     public String toString(){
         StringBuilder builder = new StringBuilder();

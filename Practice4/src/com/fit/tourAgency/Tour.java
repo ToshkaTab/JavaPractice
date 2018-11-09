@@ -83,6 +83,7 @@ class Tour {
         if(isHot) return (int)(getFullPrice() * 0.5);
         else return getFullPrice();
     }
+
     @Override
     public String toString(){
         StringBuilder builder = new StringBuilder();

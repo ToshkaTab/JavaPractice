@@ -27,6 +27,7 @@ class ClientInfo {
         discount = 0;
         id = currentClientId++;
     }
+
     public int addTour(Tour tour, int money){
         /*Tour[] newTourss = new Tour[tours.length+1];
          *int i = 0;

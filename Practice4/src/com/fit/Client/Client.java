@@ -3,6 +3,7 @@ package com.fit.Client;
 import com.fit.tourAgency.CustomerConnection;
 
     public class Client {
+
         private static int currentId = 0;
         private int id;
         private int count;

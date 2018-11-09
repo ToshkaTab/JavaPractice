@@ -16,6 +16,7 @@ final class VacationTripTour extends Tour {
         super(countryDeparture, regionDeparture, country, region, costFlight, costOfLiving, startDate, endDate);
         this.costOfEntertainment = costOfEntertainment;
     }
+
     @Override
     public int getFullPrice(){
        return super.getFullPrice() + costOfEntertainment;

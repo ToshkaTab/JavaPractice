@@ -17,6 +17,7 @@ final class ExcursionTour extends Tour {
             this.culturalPoints[i++] = shopPoint;
         }
     }
+
     @Override
     public String toString(){
         StringBuilder builder = new StringBuilder();

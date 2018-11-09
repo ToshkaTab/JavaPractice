@@ -27,6 +27,7 @@ class TourAgency {
 
         }
     }
+
     public static ClientInfo addClient(){
         clients = Arrays.copyOf(clients, clients.length+1);
         clients[clients.length-1] = new ClientInfo();

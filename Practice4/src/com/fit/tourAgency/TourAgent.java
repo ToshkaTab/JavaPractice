@@ -7,6 +7,7 @@ public final class TourAgent {
         if(discount >= 0 && discount <=100)
             TourAgency.clients[clientId].setDiscount(discount);
     }
+
     public static void setHotTour(int tourId){
         TourAgency.tours[tourId].setHot(true);
     }

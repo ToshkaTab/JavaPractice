@@ -9,7 +9,7 @@ public interface CustomerConnection {
         return TourAgency.clients[clientId].addTour(TourAgency.tours[tourId], cost);
     }
 
-     static String getAllTours() {
+    static String getAllTours() {
         StringBuilder sb = new StringBuilder();
         int i = 1;
         for (Tour tour : TourAgency.tours) {

@@ -17,7 +17,6 @@ public class Main {
             System.out.print("Выберите тур для покупки: ");
             client.buyTour(in.nextInt());
 
-
             System.out.println("Вы тур агент.");
             System.out.print("Выберите тур для установки гарячего тура: ");
             TourAgent.setHotTour(in.nextInt());
