@@ -30,6 +30,7 @@ public class OptionalData {
                 new Student("Анастасия", "Смирнова"),
                 new Student("Вадим", "Петров")
         };
+
         optionals = new Optional[]{
                 new Optional("Алгебра", teachers[0],
                         (new GregorianCalendar(2018,10,1)).getTime(),

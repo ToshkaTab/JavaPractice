@@ -7,6 +7,7 @@ public class OptionalWrongStudentException extends Exception {
         return student;
     }
 
+
     public OptionalWrongStudentException(String message, Student student){
         super(message);
         this.student = student;

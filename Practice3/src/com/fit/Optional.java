@@ -123,6 +123,7 @@ public class Optional  {
         return students.length;
     }
 
+
     public double getMeanGrade(){
         double mean = 0;
         int numOfGrades = 0;
