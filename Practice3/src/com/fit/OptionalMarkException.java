@@ -7,8 +7,11 @@ public class OptionalMarkException extends Exception {
         return mark;
     }
 
-    public OptionalMarkException(String message, int mark){
-        super(message);
+    public OptionalMarkException(int mark){
         this.mark = mark;
+    }
+    @Override
+    public String getMessage(){
+        return "Оценка должна быть в диапазоне от 1 до 12.";
     }
 }

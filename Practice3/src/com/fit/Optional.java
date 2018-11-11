@@ -66,7 +66,7 @@ public class Optional  {
     }
     public void setGrade(int i, int grade) throws OptionalMarkException {
         if(grade < 1 || grade > 12){
-            throw new OptionalMarkException("Оценка должна быть в диапазоне от 1 до 12.", grade);
+            throw new OptionalMarkException(grade);
         }
         if(i >= grades.length || i < 0){
             throw new IllegalArgumentException("Номер студента не соответствует количеству студентов или является отрицательным.");
@@ -75,14 +75,14 @@ public class Optional  {
     }
     public void setGrade(Student student, int grade) throws OptionalMarkException, OptionalWrongStudentException {
         if(grade < 1 || grade > 12){
-            throw new OptionalMarkException("Оценка должна быть в диапазоне от 1 до 12.", grade);
+            throw new OptionalMarkException(grade);
         }
         if(student == null){
             throw new NullPointerException("Ссылка не должна быть null.");
         }
         int index = getStudentIndex(student);
         if(index == -1){
-            throw new OptionalWrongStudentException("Студент не учиться на данном факультете.", student);
+            throw new OptionalWrongStudentException("Студент не посещает данный факультатив.", student);
         }
         this.grades[index] = grade;
     }

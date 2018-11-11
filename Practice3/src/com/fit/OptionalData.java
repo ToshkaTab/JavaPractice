@@ -107,8 +107,7 @@ public class OptionalData {
             }
         }
         if(index == 0){
-            throw new TeacherIdException("Учитель с заданным id не ведёт никакой факультатив, или не существует.",
-                    teacherId);
+            throw new TeacherIdException(teacherId);
         }
         teacherOptionals = Arrays.copyOf(teacherOptionals, index);
         return teacherOptionals;
