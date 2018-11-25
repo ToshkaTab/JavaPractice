@@ -13,7 +13,7 @@ public class Main {
 
         System.out.println(set.add(new POJO("P0", "t0", 0)));
         System.out.println(set.add(new POJO("P1", "t1", 1)));
-        System.out.println(set.add(new POJO("P1", "t1", 2)));
+        System.out.println(set.add(new POJO("P1", "t2", 2)));
         System.out.println(set.add(new POJO("P2", "t2", 2)));
         System.out.println(set.add(new POJO("P3", "t3", 2)));
         System.out.println(set.add(new POJO("P3", "t3", 3)));
@@ -24,7 +24,7 @@ public class Main {
         }
         System.out.println("___");
 
-        LinkedList<POJO> uniqueElements = getElements(set);
+        HashSet<POJO> uniqueElements = getElements(set);
 
         System.out.println("Result: ");
         for(POJO element : uniqueElements){
@@ -32,18 +32,29 @@ public class Main {
         }
     }
 
-    public static LinkedList<POJO> getElements(HashSet<POJO> set){
-        LinkedList<POJO> uniqueElements = new LinkedList<POJO>();
-        for(POJO item : set){
+    public static HashSet<POJO> getElements(HashSet<POJO> set){
+        HashSet<POJO> uniqueElements = new HashSet<POJO>();
+        HashSet<POJO> forDelete;
+        for(POJO item : set) {
             boolean isUnique = true;
-            for(POJO checkItem : uniqueElements){
-                if(POJO.isEqual(item, checkItem)){
-                    uniqueElements.remove(checkItem);
-                    isUnique =false;
+            forDelete = new HashSet<POJO>();
+            for (POJO checkItem : uniqueElements) {
+                if (POJO.isEqual(item, checkItem)) {
+                    forDelete.add(checkItem);
+                    isUnique = false;
+                    break;
                 }
             }
-            if(isUnique){
+
+            if (isUnique) {
                 uniqueElements.add(item);
+            }
+            else
+            {
+                for (POJO pojoDel : forDelete) {
+                    uniqueElements.remove((pojoDel));
+                }
+                forDelete.clear();
             }
         }
         return uniqueElements;
