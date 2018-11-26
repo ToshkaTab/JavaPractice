@@ -2,7 +2,6 @@ package com.fit;
 
 import java.io.IOException;
 import java.io.Reader;
-import java.io.Writer;
 import java.util.Arrays;
 
 public class ReaderWithCondition {
@@ -11,6 +10,7 @@ public class ReaderWithCondition {
     public ReaderWithCondition(Reader reader){
         this.reader = reader;
     }
+
     public  char[] next() throws IOException{
         char[] result = null;
         while(true) {
