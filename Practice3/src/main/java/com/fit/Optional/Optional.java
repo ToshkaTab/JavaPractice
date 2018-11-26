@@ -1,4 +1,7 @@
-package com.fit;
+package com.fit.Optional;
+
+import com.fit.Exceptions.OptionalMarkException;
+import com.fit.Exceptions.OptionalWrongStudentException;
 
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
@@ -105,8 +108,6 @@ public class Optional  {
         }
         this.grades = new int[students.length];
         this.id = currentId++;
-
-        OptionalData.addOptional(this);
     }
 
     private int getStudentIndex(Student student){

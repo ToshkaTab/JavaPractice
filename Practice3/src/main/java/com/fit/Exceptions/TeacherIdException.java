@@ -1,4 +1,4 @@
-package com.fit;
+package com.fit.Exceptions;
 
 public class TeacherIdException extends Exception{
     private int id;

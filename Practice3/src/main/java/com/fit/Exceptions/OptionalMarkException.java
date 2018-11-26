@@ -1,4 +1,4 @@
-package com.fit;
+package com.fit.Exceptions;
 
 public class OptionalMarkException extends Exception {
     private int mark;

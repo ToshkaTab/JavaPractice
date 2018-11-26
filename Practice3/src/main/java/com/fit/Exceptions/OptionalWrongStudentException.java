@@ -1,4 +1,6 @@
-package com.fit;
+package com.fit.Exceptions;
+
+import com.fit.Optional.Student;
 
 public class OptionalWrongStudentException extends Exception {
     private Student student;

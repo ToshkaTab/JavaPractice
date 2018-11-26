@@ -1,0 +1,9 @@
+07:10:58,005 ERROR main Listener:setGrade:67 - Оценка должна быть в диапазоне от 1 до 12.
+com.fit.Exceptions.OptionalMarkException: Оценка должна быть в диапазоне от 1 до 12.
+	at com.fit.Optional.Optional.setGrade(Optional.java:81)
+	at com.fit.Optional.Listener.setGrade(Listener.java:63)
+	at com.fit.Main.newGradesByScanner(Main.java:131)
+	at com.fit.Main.main(Main.java:18)
+07:11:32,824 ERROR main Listener:setGrade:67 - Оценка должна быть в диапазоне от 1 до 12.
+07:12:23,859 ERROR main Listener:setGrade:67 - Оценка должна быть в диапазоне от 1 до 12.
+07:14:17,857 ERROR main Listener:setGrade:67 - Оценка должна быть в диапазоне от 1 до 12. Введённая оценка: 132

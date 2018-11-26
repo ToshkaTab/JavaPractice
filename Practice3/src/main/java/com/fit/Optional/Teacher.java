@@ -1,4 +1,4 @@
-package com.fit;
+package com.fit.Optional;
 
 public class Teacher extends Person{
     private static int currentId = 0;

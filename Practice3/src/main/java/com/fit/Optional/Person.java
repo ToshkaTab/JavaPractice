@@ -1,4 +1,4 @@
-package com.fit;
+package com.fit.Optional;
 
 public class Person {
     protected int id;
